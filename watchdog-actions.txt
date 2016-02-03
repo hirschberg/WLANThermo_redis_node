@@ -1,0 +1,9 @@
+restart_thermo
+restart_pitmaster
+raspi_shutdown
+restart_display
+raspi_reboot
+backup
+update_gui
+create_new_log
+pit_on

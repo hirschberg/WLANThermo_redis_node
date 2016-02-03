@@ -1,0 +1,52 @@
+#Redis installiert:
+https://thomashunter.name/blog/installing-redis-on-debian/
+- (allerdings mit latest)
+- files von usr/local/bin in usr/bin verschoben
+
+#redis-py installiert
+https://github.com/andymccurdy/redis-py
+
+#node.js installiert
+http://revryl.com/2014/01/04/nodejs-raspberry-pi/
+
+#node-redis
+https://github.com/mranney/node_redis
+
+#Config komplett in die redis-DB geschrieben
+#Todos fehlen noch --> evtl. per subscribe-funktion
+
+#Änderungen vorgenommen:
+/usr/sbin/wlt_2_comp.py (redis eingebaut... kommentiert)
+/usr/sbin/wlt_ display
+
+#node-server liegt in /var/node-server
+# socket.io installiert
+# express installiert
+# forever global installiert
+
+
+#WLAN Sleep mode disabled
+http://www.raspberrypi.org/forums/viewtopic.php?t=61665
+
+#edit (tmp-datei rausgenommen)
+/etc/init.d/WLANThermoDIS
+
+#startup von php-cgi gelöscht
+#http://theos.in/desktop-linux/removing-unwanted-startup-debian-files-or-services/
+sudo update-rc.d -f php-cgi remove
+#hat nicht geklappt
+
+#startup configurator
+sudo apt-get install rcconf 
+sudo apt-get install sysv-rc-conf
+
+git clone git://github.com/btford/angular-express-seed WLANThermo
+
+
+
+Der Pin für den Pitmaster muss noch in der /etc/init.d/WLANThermoSERVO geändert werden
+
+
+
+#Node.js onStartup
+http://www.slidequest.com/q/70ang
