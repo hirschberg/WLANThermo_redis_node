@@ -1,0 +1,110 @@
+[ch_show]
+ch0 = True
+ch1 = True
+ch2 = True
+ch3 = True
+ch4 = True
+ch5 = True
+ch6 = True
+ch7 = True
+
+[ToDo]
+plot_start = False
+restart_thermo = True
+restart_display = True
+pit_on = False
+
+[plotter]
+keyboxframe = False
+plotbereich_min = -20
+plotbereich_max = -20
+plotsize = 700x350
+plotname = 
+keybox = top left
+color_ch0 = green
+color_ch1 = green
+color_ch2 = green
+color_ch3 = green
+color_ch4 = green
+color_ch5 = green
+color_ch6 = green
+color_ch7 = green
+
+[Email]
+email_alert = False
+auth = False
+email_to = 
+email_from = 
+email_subject = 
+server = 
+password = 
+username = 
+
+[Display]
+lcd_present = True
+
+[Logging]
+write_new_log_on_restart = False
+
+[Sound]
+beeper_enabled = False
+
+[Pitmaster]
+pit_type = SERVO
+pit_curve = 
+pit_ch = 0
+pit_set = 
+pit_pause = 
+pit_pwm_min = 
+pit_pwm_max = 
+
+[Sensoren]
+ch0 = FANTAST
+ch1 = FANTAST
+ch2 = FANTAST
+ch3 = FANTAST
+ch4 = FANTAST
+ch5 = FANTAST
+ch6 = FANTAST
+ch7 = FANTAST
+
+[ch_name]
+ch_name0 = 
+ch_name1 = 
+ch_name2 = 
+ch_name3 = 
+ch_name4 = 
+ch_name5 = 
+ch_name6 = 
+ch_name7 = 
+
+[temp_min]
+temp_min0 = 0
+temp_min1 = 0
+temp_min2 = 0
+temp_min3 = 0
+temp_min4 = 0
+temp_min5 = 0
+temp_min6 = 0
+temp_min7 = 0
+
+[temp_max]
+temp_max0 = 200
+temp_max1 = 200
+temp_max2 = 200
+temp_max3 = 200
+temp_max4 = 200
+temp_max5 = 200
+temp_max6 = 200
+temp_max7 = 200
+
+[web_alert]
+ch0 = False
+ch1 = False
+ch2 = False
+ch3 = False
+ch4 = False
+ch5 = False
+ch6 = False
+ch7 = False
+
