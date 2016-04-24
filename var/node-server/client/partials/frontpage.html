@@ -1,0 +1,54 @@
+<div class="four-col clearfix">
+	<div ng-show="!loading">
+		<h1>Hallo {{name}}</h1>
+		<p>	Are you ready?<button ng-click="setReady()">YES!</button></p>
+		<ul>
+			<li ng-repeat="ready in readys">{{ready}}</li>
+		</ul>
+	</div>
+    <div class="tempbox box kt" ng-show="socktemp[0] < 999.9">
+        <h2>00 | {{global.config.ch_name.ch_name0}} <span></span></h2><!-- {{global.config.Hardware.version2}} -->
+        <div id="temp0" class="gauge" data-value="{{socktemp[0]}}" data-max="30" data-min="10"></div>
+        <div class="pit">50% | 105°C</div>
+    </div>
+    <div class="tempbox box kt" ng-show="socktemp[1] < 999.9">
+        <h2>01 | {{global.config.ch_name.ch_name1}} <span></span></h2>
+        <div id="temp1" class="gauge" data-value="{{socktemp[1]}}" data-max="31" data-min="21"></div>
+        <div class="pit">50% | 105°C</div>
+    </div>
+    <div class="tempbox box gt" ng-show="socktemp[2] < 999.9">
+        <h2>02 | {{global.config.ch_name.ch_name2}} <span></span></h2>
+        <div id="temp2" class="gauge" data-value="{{socktemp[2]}}" data-max="32" data-min="12"></div>
+        <div class="pit">50% | 105°C</div>
+    </div>
+    <div class="tempbox box kt" ng-show="socktemp[3] < 999.9">
+        <h2>03 | {{global.config.ch_name.ch_name3}} <span></span></h2>
+        <div id="temp3" class="gauge" data-value="{{socktemp[3]}}" data-max="33" data-min="13"></div>
+        <div class="pit">50% | 105°C</div>
+    </div>
+    <div class="tempbox box kt" ng-show="socktemp[4] < 999.9">
+        <h2>04 | {{global.config.ch_name.ch_name4}} <span></span></h2>
+        <div id="temp4" class="gauge" data-value="{{socktemp[4]}}" data-max="34" data-min="14"></div>
+        <div class="pit">50% | 105°C</div>
+    </div>
+    <div class="tempbox box gt" ng-show="socktemp[5] < 999.9">
+        <h2>05 | {{global.config.ch_name.ch_name5}} <span></span></h2>
+        <div id="temp5" class="gauge" data-value="{{socktemp[5]}}" data-max="35" data-min="15"></div>
+        <div class="pit">50% | 105°C</div>
+    </div>
+    <div class="tempbox box kt" ng-show="socktemp[6] < 999.9">
+        <h2>06 | {{global.config.ch_name.ch_name6}} <span></span></h2>
+        <div id="temp6" class="gauge" data-value="{{socktemp[6]}}" data-max="36" data-min="16"></div>
+        <div class="pit">50% | 105°C</div>
+    </div>
+    <div class="tempbox box kt" ng-show="socktemp[7] < 999.9">
+        <h2>07 | {{global.config.ch_name.ch_name7}} <span></span></h2>
+        <div id="temp7" class="gauge" data-value="{{socktemp[7]}}" data-max="37" data-min="17"></div>
+        <div class="pit">50% | 105°C</div>
+    </div>
+</div>
+
+<div ng-show="loading">
+	<i>loading...</i>
+</div>
+

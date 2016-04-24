@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" ng-app="WLANThermo">
+    <![endif]-->
+    <!--[if IE 7]>
+    <html class="no-js lt-ie9 lt-ie8" ng-app="WLANThermo">
+        <![endif]-->
+        <!--[if IE 8]>
+        <html class="no-js lt-ie9" ng-app="WLANThermo">
+            <![endif]-->
+            <!--[if gt IE 8]>
+            <!-->
+            <html class="no-js" ng-app="WLANThermo">
+                <!--<![endif]-->
+<head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <title>WLANThermo</title>
+                <meta name="description" content="">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+
+                <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+                <link rel="stylesheet" href="public/fonts/flaticon.css">
+                <link rel="stylesheet" href="public/css/style.css">
+                <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+                <script src="public/js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+<!--     <div ng-controller="FrontpageController">
+        <span ng-show="socktemp.1!=999.9">Temp0: {{socktemp.1}}</span>
+        <span ng-show="socktemp.2!=999.9">Temp1: {{socktemp.2}}</span>
+        <span ng-show="socktemp.3!=999.9">Temp2: {{socktemp.3}}</span>
+    </div> -->
+
+<header>
+                    <div class="logo"><img src="public/img/logo.svg" alt=""></div>
+                    <div class="meta">
+                        <ul>
+                            <li class="flaticon-weather"><a href="">Weather</a></li>
+                            <li class="flaticon-line23 pit"><a href="">Chart</a></li>
+                            <li class="flaticon-radioactive3 pit"><a href="">Pitmaster</a></li>
+                            <li class="flaticon-black302 user"><a href="">User</a></li>
+                            <li class="flaticon-power26 shutdown"><a href="">Shutdown</a>
+                                <div class="tooltip">
+                                    <ul class="tooltip-content">
+                                        <li class="flaticon-restart1"><a href="">Restart</a></li>
+                                        <li class="flaticon-power26"><a href="">Shutdown</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="lastupdate">
+                            <angular-refresh url="ajax/all.php" ng-model="global" interval="5000"></angular-refresh>
+                        <div ng-controller="FrontpageController"><div class="temp">{{socktemp.time}}</div></div>
+                        <div class="pit">28.08.2014 22:13:50</div>
+                        <!-- {{global.config.Hardware.version2}} -->
+                    </div>
+                </header>
+                <div id="content" class="clearfix">
+                    <nav>
+                        <ul nav-menu="active">
+                            <li>
+                                <a href="#/home" class="flaticon-thermometer4">
+                                    <span>Temperatur</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/logfiles" class="flaticon-listing1">
+                                    <span>Logfiles</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#/settings" class="flaticon-machine2">
+                                    <span>Einstellungen</span>
+                                </a>
+                                <ul>
+                                    <li>
+                                        <a href="#/settings-channel" class="flaticon-settings22">
+                                            <span>Kanaleinstellungen</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#/settings-wlan" class="flaticon-signal1">
+                                            <span>WLAN-Config</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#/settings-notification" class="flaticon-32">
+                                            <span>Benachrichtigungen</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#/settings-pit" class="flaticon-radioactive3">
+                                            <span>Pitmaster</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#/settings-webcam" class="flaticon-webcam5">
+                                            <span>Webcam</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                </li>
+                                <li>
+                                    <a href="#/info" ng-class="navClass('info')" class="flaticon-information8"><span>Info</span></a>
+                                </li>
+                            </ul>
+                        </ul>
+                        <a href="" class="activator flaticon-arrow487"></a>
+                    </nav>
+    <main ng-view>
+
+    </main>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular-route.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+	<script>
+	    var Socket = io.connect();
+	</script>
+</body>
+</html>
