@@ -11,4 +11,7 @@
 !/var/www/
 !/var/www/*
 !/var/www/*/
-!/var/www/node-server
+!/var/node-server
+!/var/node-server/server/
+var/node-server/server/certs
+var/node-server/WLANThermo_jade
